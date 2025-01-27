@@ -2,8 +2,22 @@
   display: flex;
   justify-content: center;
   border-bottom: 1px solid rgb(243, 243, 243);
+  height: 100%;
 }
-
+.cothon-img {
+  height: 13vh;
+  width: 100%;
+}
+.nav-cothon-head {
+  color: blue;
+  font-size: 24px;
+}
+.link-item {
+  text-decoration: none;
+}
+.add-nav {
+  display: flex;
+}
 @media screen and (max-width: 767px) {
   .nav-header {
     flex-direction: column;
@@ -54,12 +68,18 @@
 }
 
 .website-logo {
-  width: 110px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .website-logo {
     width: 165px;
+  }
+  .nav-header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(243, 243, 243);
+    height: 8vh;
   }
 }
 

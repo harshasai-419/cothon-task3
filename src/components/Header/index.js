@@ -36,9 +36,9 @@ const Header = props => {
         <div className="nav-bar-mobile-logo-container">
           <Link to="/">
             <img
-              className="website-logo"
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-              alt="website logo"
+              src="https://internship.aicte-india.org/uploads/logo/CORPORATE66fbc5f5246c31727776245.jpeg"
+              className="cothon-img"
+              alt="web-logo"
             />
           </Link>
 
@@ -56,40 +56,42 @@ const Header = props => {
         </div>
 
         <div className="nav-bar-large-container">
-          <Link to="/">
+          <Link to="/" className="link-item">
             <img
-              className="website-logo"
-              src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
-              alt="website logo"
+              src="https://internship.aicte-india.org/uploads/logo/CORPORATE66fbc5f5246c31727776245.jpeg"
+              className="cothon-img"
+              alt="web-logo"
             />
           </Link>
-          <ul className="nav-menu">
-            <li className="nav-menu-item">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
+          <div className="add-nav">
+            <ul className="nav-menu">
+              <li className="nav-menu-item">
+                <Link to="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
 
-            <li className="nav-menu-item">
-              <Link to="/products" className="nav-link">
-                Products
-              </Link>
-            </li>
+              <li className="nav-menu-item">
+                <Link to="/products" className="nav-link">
+                  Products
+                </Link>
+              </li>
 
-            <li className="nav-menu-item">
-              <Link to="/cart" className="nav-link">
-                Cart
-                {renderCartItemsCount()}
-              </Link>
-            </li>
-          </ul>
-          <button
-            type="button"
-            className="logout-desktop-btn"
-            onClick={onClickLogout}
-          >
-            Logout
-          </button>
+              <li className="nav-menu-item">
+                <Link to="/cart" className="nav-link">
+                  Cart
+                  {renderCartItemsCount()}
+                </Link>
+              </li>
+            </ul>
+            <button
+              type="button"
+              className="logout-desktop-btn"
+              onClick={onClickLogout}
+            >
+              Logout
+            </button>
+          </div>
         </div>
       </div>
       <div className="nav-menu-mobile">
