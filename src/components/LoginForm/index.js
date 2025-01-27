@@ -37,7 +37,7 @@ class LoginForm extends Component {
     event.preventDefault()
     const {username, password} = this.state
     const userDetails = {username, password}
-    const url = 'https://apis.ccbp.in/login'
+    const url = 'https://cothon-task1-backend.onrender.com/login'
     const options = {
       method: 'POST',
       body: JSON.stringify(userDetails),
